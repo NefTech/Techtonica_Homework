@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+/* Write a function called countChars that counts the number of times a letter apears on a string. It should have a parameter called myStr.
+The parameter should take in a string argument.
+The function should contain a local variable called charCount, which is an object. The format for the property attribute pairs should be like this "a": 2
+
+Your function should look at each character in the input string (the argument).
+If a character is not a property in charCount, add it as such, making sure to provide an attribute.
+If a character is already a property in charCount, increment the attribute.
+Print and return charCount at the end of the function.
+
+Remember to call your function and pass in a valid argument.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+// Write a function called countChars that counts the number of times a letter apears on a string, with a parameter called myStr
+
+function countChars(myStr) {
+
+
+
+// Parameter should have a string argument
+// Local variable called charCount with pairs, Ex:"a": 2
+ 
+ var charCount = {};
+ for ( var i = 0; i<= myStr.length - 1;  i++;) {
+ 
+ 
+ // If a character is already a property in charCount, increment the attribute.
+ 
+ 	var temp = myStr[i]
+ 	if(charCount.hasOwnProperty([temp])) {
+   charCount[temp] += 1;
+
+// If a character is not a property in charCount, add it as such, making sure to provide an attribute.	
+ 
+ } 
+
+ else {
+ 	charCount[temp] =1;
+ }
+}
+
+// Print and return charCount at the end of the function.
+console.log(charCount);
+return charCount;
+// call your function
+
+}
+countChars ("Cabrera")
+</script>
+</body>
+</html>
+
+/* 
+Write a function that
+
+*/
